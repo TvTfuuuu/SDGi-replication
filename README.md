@@ -8,45 +8,26 @@
 
 This is a **partial replication**, not exact reproduction.
 
-## 2. The paper used for reproduction
-**Skrynnyk, M., Disassa, G., Krachkov, A., & DeVera, J. (2024). _SDGi Corpus: A Comprehensive Multilingual Dataset for Text Classification by Sustainable Development Goals_. Proceedings of the 2nd Symposium on NLP for Social Good.**
+## 2. Getting Start
+### a) Download the zip on Github
 
-## 3. Data
-Public datasets:
-
-- `UNDP/sdgi-corpus`（Hugging Face）
-
-By default, the script downloads the dataset directly from Hugging Face.
-
-## 4. code
-
-- `sdgi_partial_replication_minimal_cn.py`
-- `requirements_sdgi_minimal_cn.txt`
-
-## 5. Eviroment
-
-- **Python 3.11**
-
-Install dependencies:
-
+### b) Set up the enviroment
+Firstly, create a virtual environment
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+Secondly, install dependencies
 ```bash
 pip install -r requirements_sdgi.txt
 ```
-
-## 6. Run with a single command
-
+Thirdly, run with a single command
 ```bash
 python sdgi_replication.py
 ```
 
-The default configuration is：
 
-- `size = x`
-- `language = en`
-
-In other words, the most commonly used `sdgi-x-en` setting.
-
-## 7. What does the script do automatically?
+## 3. What does the script do automatically?
 The script automatically performs the following steps:
 
 1. Load the `UNDP/sdgi-corpus`
@@ -58,7 +39,7 @@ The script automatically performs the following steps:
 7. Evaluate on the test set
 8. Save the results file and images
 
-## 8. output result
+## 4. output result
 An output folder will be created after execution（`sdgi_outputs/`）, including：
 
 - `summary.json`
