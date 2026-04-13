@@ -1,8 +1,6 @@
 # SDGi replication
 
 ## 1. Introduction 
-I have not replicate all the experiments from the author’s articel, but rather the most essential ones.
-
 **supervised baseline**：
 
 - **TF-IDF and linear SVM-style multi-class classifier**
