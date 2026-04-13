@@ -1,3 +1,7 @@
+# Attribution:
+# This coursework project is a simplified partial replication of the SDGi Corpus study.
+# It is inspired by the published paper, public dataset, and authors' benchmark repository.
+# This file is a re-implementation for coursework purposes and is not the original authors' code.
 
 from __future__ import annotations
 
